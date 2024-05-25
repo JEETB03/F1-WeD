@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 - Teams</title>
+    <link rel="icon" type="image/png" href="logos\formula-1-logo-5-3.png"> <!-- Add favicon -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0; /* Remove margin */
+            overflow-x: hidden; /* Hide horizontal scrollbar caused by large image */
+        }
+
+        header {
+            background-color: #FF0000; /* Red header */
+            color: #fff;
+            padding: 10px 0;
+            position: relative; /* Position header at top of page */
+            width: 100%; /* Full width */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-left: 10px;
+        }
+
+        .social-icons img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            position: relative; /* Ensure relative positioning for child elements */
+            display: flex;
+            flex-wrap: wrap; /* Enable wrapping */
+            justify-content: space-between; /* Distribute items evenly */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: #fff; /* Change font color to white */
+        }
+
+        .item {
+            width: calc(40% - 40px); /* Calculate width with space for padding */
+            margin-bottom: 40px; /* Add margin for spacing between rows */
+            background-color: #fff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside each item */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+
+        .item h2 {
+            font-size: 18px; /* Heading font size */
+            margin-bottom: 10px; /* Bottom margin for spacing */
+        }
+
+        .item img {
+            width: 100%; /* Ensure image fills its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .item p {
+            font-size: 14px; /* Paragraph font size */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative; /* Ensure relative positioning for child elements */
+            margin-top: 20px;
+        }
+
+        /* Menu styling */
+        .menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .menu li a:hover {
+            color: #ccc;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative; /* Ensure relative positioning for child elements */
+            margin-top: 20px;
+        }
+
+        .container-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-section,
+        .contact-section {
+            flex: 1;
+        }
+
+        .about-section {
+            text-align: left;
+        }
+
+        .contact-section {
+            text-align: right;
+        }
+
+        .description {
+            display: none;
+        }
+
+        .show-description {
+            cursor: pointer;
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <!-- Logo -->
+                <div class="logo">
+                 <img src="logos\F1_(white).png" alt="Formula 1 Logo">
+                     Formula 1 - Teams
+               </div>
+          <!-- Social media icons -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Formula1/" target="_blank"><img src="logos\fb.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/F1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="logos\1690643640twitter-x-icon-png.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/f1/" target="_blank"><img src="logos\insta.png" alt="Instagram"></a>
+    </div>
+        <nav>
+            <!-- Navigation bar -->
+              <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.formula1.com/en/latest.html">News</a></li>
+                <li><a href="2 calender.html">Calendar</a></li>
+                <li><a href="https://www.youtube.com/@Formula1">Videos</a></li>
+                <li><a href="2 drivers.html">Drivers</a></li>
+                <li><a href="2 teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="item">
+            <h2>Mercedes-AMG PETRONAS F1 Team</h2>
+            <img src="teams\mercedes.png" alt="Mercedes F1 Team">
+            <p>Mercedes-AMG Petronas Formula One Team, competing as Mercedes-AMG Petronas Formula One Team, is a British Formula One racing team based in Brackley, England. They compete in the FIA Formula One World Championship as a constructor.</p>
+        </div>
+
+        <div class="item">
+            <h2>BWT Alpine F1 Team</h2>
+            <img src="teams\alpine.jpg" alt="Alpine F1 Team">
+            <p>Alpine, competing as BWT Alpine F1 Team, is a French Formula One racing team. The team was founded in 1977 by former World Rally Champion Jean-Pierre Nicolas. </p>
+        </div>
+
+        <div class="item">
+            <h2>MoneyGram Haas F1 Team</h2>
+            <img src="teams\haas.jpg" alt="Haas F1 Team">
+            <p>The Haas Formula 1 Team, competing as MoneyGram Haas F1 Team, is an American Formula One racing team established by NASCAR Cup Series team co-owner Gene Haas in April 2014. </p>
+        </div>
+
+        <div class="item">
+            <h2>Oracle Red Bull Racing F1 Team</h2>
+            <img src="teams\red bull.jpg" alt="Red Bull Racing F1 Team">
+            <p>Red Bull Racing Honda is a British Formula One racing team, racing under an Austrian licence, based in the United Kingdom. It is one of two Formula One teams owned by beverage company Red Bull GmbH.</p>
+        </div>
+
+        <div class="item">
+            <h2>McLaren Formula 1 Team</h2>
+            <img src="teams\mclaren.jpg" alt="McLaren F1 Team">
+            <p>McLaren Racing Limited is a British motor racing team based at the McLaren Technology Centre in Woking, Surrey, England. McLaren is best known as a Formula One constructor but has also competed in the Indianapolis 500 and Canadian-American Challenge Cup. </p>
+        </div>
+
+        <div class="item">
+            <h2>Aston Martin Aramco F1 Team</h2>
+            <img src="teams\aston martin.jpg" alt="Aston Martin F1 Team">
+            <p>Aston Martin Aramco Cognizant Formula One Team is a British Formula One racing team. The team competes under a British licence from Silverstone, United Kingdom.</p>
+        </div>
+
+        <div class="item">
+            <h2>Visa Cash App RB Formula One Team</h2>
+            <img src="teams\visa rb.jpg" alt="Visa F1 Team">
+            <p>The Visa Cash App RB Formula One Team, known commonly as Visa F1 Team or simply RB, is a British Formula One racing team, racing under an American licence, based in the United Kingdom. </p>
+        </div>
+
+        <div class="item">
+            <h2>Scuderia Ferrari F1 Team</h2>
+            <img src="teams\ferrari.jpg" alt="Ferrari F1 Team">
+            <p>Scuderia Ferrari, competing as Scuderia Ferrari Mission Winnow, is the racing division of luxury Italian auto manufacturer Ferrari and the racing team that competes in Formula One racing.</p>
+        </div>
+
+        <div class="item">
+            <h2>Stake F1 Team Kick Sauber</h2>
+            <img src="teams\kick.jpg" alt="Stake F1 Team">
+            <p>The Stake F1 Team Kick Sauber, commonly referred to as Stake F1 Team, is a Swiss Formula One racing team. It was founded in the 1970s by Peter Sauber, who progressed through hillclimbing and the World Sportscar Championship before entering Formula One in 1993.</p>
+        </div>
+
+        <div class="item">
+            <h2>Williams Racing F1 Team</h2>
+            <img src="teams\williams.jpg" alt="Williams F1 Team">
+            <p>Williams Racing, competing as Williams Racing Group and commonly known as Williams, is a British Formula One motor racing team and constructor.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="container-footer">
+                <div class="about-section">
+                    <h2>About Formula 1</h2>
+                    <p class="description">Formula 1 is the highest class of international auto racing for single-seater formula racing cars. It is owned by the Formula One Group. The World Championship series has been held since 1950.</p>
+                    <button class="show-description" onclick="toggleDescription()">Show Description</button>
+                </div>
+                <div class="contact-section">
+                    <h2>Contact Formula 1</h2>
+                    <p>Email: info@formula1.com<br>Phone: +1 (123) 456-7890<br>Address: Formula 1 Headquarters, London, UK</p>
+                </div>
+            </div>
+            <p>&copy; 2024 Formula 1. All rights reserved. Created by Jeet Biswas</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDescription() {
+            var description = document.querySelector('.description');
+            var button = document.querySelector('.show-description');
+
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+                button.textContent = 'Hide Description';
+            } else {
+                description.style.display = 'none';
+                button.textContent = 'Show Description';
+            }
+        }
+    </script>
+</body>
+</html>

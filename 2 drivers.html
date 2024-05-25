@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 - Drivers</title>
+    <link rel="icon" type="image/png" href="logos\formula-1-logo-5-3.png"> <!-- Add favicon -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0; /* Remove margin */
+            overflow-x: hidden; /* Hide horizontal scrollbar caused by large image */
+        }
+
+        header {
+            background-color: #FF0000; /* Red header */
+            color: #fff;
+            padding: 10px 0;
+            position: relative; /* Position header at top of page */
+            width: 100%; /* Full width */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-left: 10px;
+        }
+
+        .social-icons img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            position: relative; /* Ensure relative positioning for child elements */
+            padding: 20px; /* Add padding for spacing */
+            display: flex;
+            flex-wrap: wrap; /* Enable wrapping */
+            justify-content: space-between; /* Distribute items evenly */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: #fff; /* Change font color to white */
+        }
+
+        .item {
+            width: calc(20% - 40px); /* Calculate width with space for padding */
+            margin-bottom: 40px; /* Add margin for spacing between rows */
+            background-color: #fff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside each item */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+
+        .item h2 {
+            font-size: 18px; /* Heading font size */
+            margin-bottom: 10px; /* Bottom margin for spacing */
+        }
+
+        .item img {
+            width: 100%; /* Ensure image fills its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .item p {
+            font-size: 14px; /* Paragraph font size */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative; /* Ensure relative positioning for child elements */
+            margin-top: 20px;
+        }
+
+          /* Menu styling */
+          .menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .menu li a:hover {
+            color: #ccc;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative; /* Ensure relative positioning for child elements */
+            margin-top: 20px;
+        }
+
+        .container-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-section,
+        .contact-section {
+            flex: 1;
+        }
+
+        .about-section {
+            text-align: left;
+        }
+
+        .contact-section {
+            text-align: right;
+        }
+
+        .description {
+            display: none;
+        }
+
+        .show-description {
+            cursor: pointer;
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <!-- Logo -->
+         <div class="logo">
+            <img src="logos\F1_(white).png" alt="Formula 1 Logo">
+            Formula 1 - Drivers
+        </div>
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Formula1/" target="_blank"><img src="logos\fb.png" alt="Facebook"></a>
+            <a href="https://twitter.com/F1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="logos\1690643640twitter-x-icon-png.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/f1/" target="_blank"><img src="logos\insta.png" alt="Instagram"></a>
+        </div>
+        <!-- Navigation bar -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.formula1.com/en/latest.html">News</a></li>
+                <li><a href="2 calender.html">Calendar</a></li>
+                <li><a href="https://www.youtube.com/@Formula1">Videos</a></li>
+                <li><a href="2 drivers.html">Drivers</a></li>
+                <li><a href="2 teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Repeat this item for each team -->
+        <div class="item">
+            <img src="drivers\verstappen.jpg" alt="Max Verstappen">
+            <p>Max Verstappen, born in 1997, is a Dutch Formula One driver known for his aggressive racing style and exceptional talent. He secured his first F1 World Championship title in 2021, becoming the first Dutch driver to achieve this milestone.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\perez.jpg" alt="Sergio Perez">
+            <p>Sergio Perez, born in 1990, is a Mexican Formula One driver recognized for his consistency and strategic prowess on the track. He joined Red Bull Racing in 2021, bringing experience and valuable support to teammate Max Verstappen's title campaign.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\russel.jpg" alt="George Russel">
+            <p>George Russell, born in 1998, is a British Formula One driver known for his impressive performances and potential as a future champion. He has showcased his talent with Williams Racing and has been recognized as a promising talent within the sport.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\hamilton.jpg" alt="Lewis Hamilton">
+            <p>Lewis Hamilton, born in 1985, is a British Formula One driver widely regarded as one of the greatest of all time. With numerous championship titles and race wins, Hamilton's skill, consistency, and advocacy for social issues have made him a global icon in motorsport.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\leclerc.jpg" alt="Charles Leclerc">
+            <p>Charles Leclerc, born in 1997, is a Monegasque Formula One driver known for his speed and determination on the track. He has quickly risen through the ranks and established himself as a formidable competitor, showcasing his talent with Scuderia Ferrari.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\sainz.jpg" alt="Carlos Sainz">
+            <p>Carlos Sainz, born in 1994, is a Spanish Formula One driver recognized for his consistency and versatility behind the wheel. With stints at multiple teams including Ferrari, Sainz has proven himself as a skilled racer capable of delivering strong performances in competitive fields.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\piastri.jpg" alt="Oscar Piastri">
+            <p>Oscar Piastri, born in 2001, is an Australian racing driver known for his remarkable talent and determination. As the 2020 FIA Formula 3 champion, Piastri has quickly caught the attention of motorsport enthusiasts worldwide, showcasing his potential for future success in higher categories like Formula One.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\norris.jpg" alt="Lando Norris">
+            <p>Lando Norris, born in 1999, is a British Formula One driver admired for his raw speed and charismatic personality. With McLaren Racing, Norris has demonstrated impressive skills on the track, earning him a reputation as one of the sport's rising stars.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\stroll.jpg" alt="Lance stroll">
+            <p>Lance Stroll, born in 1998, is a Canadian Formula One driver known for his talent and determination on the grid. With Racing Point/Aston Martin, Stroll has showcased his racing abilities, contributing to the team's competitive performances in Formula One.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\alonso.jpg" alt="Fernando Alonso">
+            <p>Fernando Alonso, born in 1981, is a Spanish Formula One driver hailed as one of the sport's legends. With a remarkable career featuring multiple championship titles and iconic victories, Alonso's skill, experience, and competitive spirit continue to influence the grid.T</p>
+        </div>
+        <!-- End of item -->
+      
+        <div class="item">
+            <img src="drivers\ocon.jpg" alt="Esteban Ocon">
+            <p>
+                Esteban Ocon, born in 1996, is a French Formula One driver known for his steady performances and determination on the track. As a member of Alpine F1 Team, Ocon has showcased his racing talent, contributing to the team's success in Formula One.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\gasly.jpg" alt="Pierre Gasly">
+            <p>
+                Pierre Gasly, born in 1996, is a French Formula One driver celebrated for his resilience and skill behind the wheel. Notably winning the 2020 Italian Grand Prix with AlphaTauri, Gasly has proven himself as a formidable competitor in the highly competitive world of motorsport.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\albon.jpg" alt="Alexander Albon">
+            <p>
+                Alexander Albon, born in 1996, is a Thai-British Formula One driver recognized for his speed and determination on the track. While primarily associated with Red Bull Racing, Albon has showcased his racing talent, contributing to various teams' performances in Formula One.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\sargaent.jpg" alt="Logan sargeant">
+            <p>
+                Logan Sargeant, born in 2000, is an American racing driver known for his promising talent and competitive spirit. As a rising star in motorsport, Sargeant has demonstrated skill and determination on the track, earning recognition in junior categories like Formula 3.</p>
+        </div>
+        <!-- End of item -->
+     
+        <div class="item">
+            <img src="drivers\ricciardo.jpg" alt="Daniel Ricciardo">
+            <p>
+                Daniel Ricciardo, born in 1989, is an Australian Formula One driver admired for his infectious personality and exceptional racing ability. With a string of podium finishes and victories to his name, Ricciardo's skill and charisma have made him a fan favorite on the grid.</p>
+        </div>
+        <!-- End of item -->
+      
+        <div class="item">
+            <img src="drivers\tsunoda.jpg" alt="Yuki Tsunoda">
+            <p>Yuki Tsunoda, born in 2000, is a Japanese Formula One driver known for his rapid rise through the ranks of motorsport. With AlphaTauri, Tsunoda has showcased his talent and determination, becoming the first Japanese driver to score points in his debut race in over a decade.</p>
+        </div>
+        <!-- End of item -->
+       
+        <div class="item">
+            <img src="drivers\bottas.jpg" alt="Valetteri Bottas">
+            <p>Valtteri Bottas, born in 1989, is a Finnish Formula One driver recognized for his consistency and speed on the track. As a key member of Mercedes-AMG Petronas Formula One Team, Bottas has contributed to multiple championship victories alongside teammate Lewis Hamilton.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\guanyu.jpg" alt="Zhou Guanyu">
+            <p>Zhou Guanyu, born in 1999, is a Chinese Formula One driver hailed for his talent and determination in the sport. As the first Chinese driver to secure a full-time seat in Formula One with Alfa Romeo Racing, Zhou is poised to make a significant impact on the global racing stage.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\magnussen.jpg" alt="Kevin Magnussen">
+            <p>Kevin Magnussen, born in 1992, is a Danish racing driver known for his aggressive and competitive style on the track. With experience in Formula One and endurance racing, Magnussen brings valuable skill and determination to any team he represents.</p>
+        </div>
+        <!-- End of item -->
+        
+        <div class="item">
+            <img src="drivers\hulkenberg.jpg" alt="Nico Hülkenberg">
+            <p>Nico Hülkenberg, born in 1987, is a German racing driver admired for his talent and versatility in motorsport. With experience in Formula One and endurance racing, Hülkenberg has showcased his skill and resilience, often stepping in as a reliable substitute driver for various teams.</p>
+        </div>
+        <!-- End of item -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="container-footer">
+                <div class="about-section">
+                    <h2>About Formula 1</h2>
+                    <p class="description">Formula 1 is the highest class of international auto racing for single-seater formula racing cars. It is owned by the Formula One Group. The World Championship series has been held since 1950.</p>
+                    <button class="show-description" onclick="toggleDescription()">Show Description</button>
+                </div>
+                <div class="contact-section">
+                    <h2>Contact Formula 1</h2>
+                    <p>Email: info@formula1.com<br>Phone: +1 (123) 456-7890<br>Address: Formula 1 Headquarters, London, UK</p>
+                </div>
+            </div>
+            <p>&copy; 2024 Formula 1. All rights reserved. Created by Jeet Biswas</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDescription() {
+            var description = document.querySelector('.description');
+            var button = document.querySelector('.show-description');
+
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+                button.textContent = 'Hide Description';
+            } else {
+                description.style.display = 'none';
+                button.textContent = 'Show Description';
+            }
+        }
+    </script>
+</body>
+</html>
